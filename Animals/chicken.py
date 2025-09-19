@@ -2,7 +2,7 @@ from Animals.animal import Animal
 
 
 class Chicken(Animal):
-    def __init__(self, name):
+    def __init__(self, name="Clucky"):
         super().__init__(name, "Gallus gallus domesticus")
 
     def speak(self):
