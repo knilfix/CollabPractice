@@ -1,9 +1,10 @@
-print("Hello Git")
+from farm import Farm
+from Animals.cat import Cat
+from Animals.dog import Dog
 
+# Create farm and animals
+my_farm = Farm()
+my_farm.add_animal(Cat("Whiskers"))
+my_farm.add_animal(Dog("Buddy"))
 
-def feature_a():
-    return "Feature A is working"
-
-
-def feature_b():
-    return "Feature B is ready!"
+print("Farm sounds:", my_farm.make_sounds())
